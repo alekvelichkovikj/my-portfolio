@@ -1,13 +1,115 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  line-height: 1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+ol,
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.text-yellow {
+  color: #ffc000;
+  font-weight: 700;
+}
+
+/* Navbar */
+a {
+  display: inline-block;
+  color: #1f1f1f;
+  transition: all 0.3s ease-in;
+}
+
+.yellow {
+  background-color: #ffc000;
+  padding: 5px 30px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+/* Scroll to top */
+.back-to-top-light {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.back-to-top-dark {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.back-to-top-light:hover,
+.back-to-top-dark:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* Home */
+.container-mobile {
+  max-width: 320px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-mobile h3 {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social-icon {
+  padding: 0 10px;
+}
+
+.mt-2 {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.social-icons @media screen and (min-device-width: 878px) {
+  /* Navbar */
+  a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 }

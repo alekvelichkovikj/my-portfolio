@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from './components/Navbar'
+import styled from 'styled-components'
+import { useContext } from 'react'
+import { ThemeContext } from './context/theme'
+import { ScrollToTop } from './components/ScrollToTop'
+import { Home } from './components/Home'
 
-function App() {
+export const App = () => {
+  const [{ theme }] = useContext(ThemeContext)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        backgroundColor: theme.backgroundColor,
+        color: theme.color,
+      }}
+    >
+      <Container>
+        <Navbar />
+        <Home />
+        <ScrollToTop />
+      </Container>
     </div>
-  );
+  )
 }
 
-export default App;
+const Container = styled.div`
+  height: 5000px;
+`
