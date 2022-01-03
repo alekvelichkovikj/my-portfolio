@@ -27,9 +27,9 @@ p {
 }
 
 /* Navbar */
-a {
+.nav a {
   display: inline-block;
-  color: #1f1f1f;
+  color: #3f3f3f;
   transition: all 0.3s ease-in;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 /* Scroll to top */
-.back-to-top-light {
+.back-to-top {
   display: inline-block;
   position: fixed;
   bottom: 20px;
@@ -51,24 +51,6 @@ a {
   font-size: 40px;
   cursor: pointer;
   transition: all 0.3s ease-in;
-}
-
-.back-to-top-dark {
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 40px;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
-}
-
-.back-to-top-light:hover,
-.back-to-top-dark:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
 }
 
 /* Home */
@@ -85,14 +67,14 @@ a {
 .container-mobile h3 {
   display: inline-block;
   margin-bottom: 20px;
-  color: #1f1f1f;
+  color: #3f3f3f;
 }
 
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .social-icon {
@@ -104,9 +86,24 @@ a {
   margin-top: 10px;
 }
 
-.social-icons @media screen and (min-device-width: 878px) {
+.text-dark {
+  color: #3f3f3f;
+}
+
+.text-light {
+  color: #fcf5eb;
+}
+
+@media screen and (min-device-width: 878px) {
   /* Navbar */
   a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .back-to-top:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);

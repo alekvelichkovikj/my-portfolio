@@ -11,58 +11,60 @@ export const Navbar = () => {
 
   return (
     <Nav>
-      <Container>
-        <Logo onClick={() => setIsOpen(false)}>
-          <Link smooth to='#home'>
-            <IoPlanetOutline className='icon' />
-          </Link>
-        </Logo>
-
-        <Logo className='icon' onClick={toggleTheme}>
-          {isDark ? <WiSolarEclipse /> : <WiMoonWaxingCrescent3 />}
-        </Logo>
-
-        <Hamburger onClick={() => setIsOpen(!isOpen)}>
-          <span />
-          <span />
-          <span />
-        </Hamburger>
-
-        <Menu className='menu' isOpen={isOpen}>
-          <MenuLink onClick={() => setIsOpen(false)}>
-            <Link className='yellow' smooth to={'#bio'}>
-              Bio
+      <div className='nav'>
+        <Container>
+          <Logo onClick={() => setIsOpen(false)}>
+            <Link smooth to='#home'>
+              <IoPlanetOutline className='icon' />
             </Link>
-          </MenuLink>
+          </Logo>
 
-          <MenuLink onClick={() => setIsOpen(false)}>
-            <Link smooth to='#education'>
-              Education
-            </Link>
-          </MenuLink>
+          <Logo className='icon' onClick={toggleTheme}>
+            {isDark ? <WiSolarEclipse /> : <WiMoonWaxingCrescent3 />}
+          </Logo>
 
-          <MenuLink onClick={() => setIsOpen(false)}>
-            <Link smooth to='#projects'>
-              Projects
-            </Link>
-          </MenuLink>
+          <Hamburger onClick={() => setIsOpen(!isOpen)}>
+            <span />
+            <span />
+            <span />
+          </Hamburger>
 
-          <MenuLink onClick={() => setIsOpen(false)}>
-            <Link className='yellow' smooth to='#contact'>
-              Contact
-            </Link>
-          </MenuLink>
+          <Menu className='menu' isOpen={isOpen}>
+            <MenuLink onClick={() => setIsOpen(false)}>
+              <Link className='yellow' smooth to={'#bio'}>
+                Bio
+              </Link>
+            </MenuLink>
 
-          <MenuLink onClick={() => setIsOpen(false)}>
-            <a
-              target='blank'
-              href='https://drive.google.com/file/d/1Nab9RqJq3T0GpilClfVEibc-boJP7ZBQ/view?usp=sharing'
-            >
-              Resume
-            </a>
-          </MenuLink>
-        </Menu>
-      </Container>
+            <MenuLink onClick={() => setIsOpen(false)}>
+              <Link smooth to='#education'>
+                Education
+              </Link>
+            </MenuLink>
+
+            <MenuLink onClick={() => setIsOpen(false)}>
+              <Link smooth to='#projects'>
+                Projects
+              </Link>
+            </MenuLink>
+
+            <MenuLink onClick={() => setIsOpen(false)}>
+              <Link className='yellow' smooth to='#contact'>
+                Contact
+              </Link>
+            </MenuLink>
+
+            <MenuLink onClick={() => setIsOpen(false)}>
+              <a
+                target='blank'
+                href='https://drive.google.com/file/d/1Nab9RqJq3T0GpilClfVEibc-boJP7ZBQ/view?usp=sharing'
+              >
+                Resume
+              </a>
+            </MenuLink>
+          </Menu>
+        </Container>
+      </div>
     </Nav>
   )
 }
@@ -93,7 +95,7 @@ const Hamburger = styled.div`
   span {
     height: 2px;
     width: 25px;
-    background-color: #1f1f1f;
+    background-color: #2f2f2f;
     margin-bottom: 4px;
     border-radius: 5px;
   }
@@ -121,10 +123,11 @@ const Menu = styled.div`
 const MenuLink = styled.span`
   padding: 20px 30px;
   text-align: center;
+  color: #3f3f3f;
 `
 
 const Logo = styled.span`
   padding: 20px 0;
   font-size: 28px;
-  color: #1f1f1f;
+  color: #3f3f3f;
 `

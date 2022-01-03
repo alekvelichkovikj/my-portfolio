@@ -4,14 +4,12 @@ import { ThemeContext } from '../context/theme'
 import { IoArrowUp } from 'react-icons/io5'
 
 export const ScrollToTop = () => {
-  const { isDark } = useContext(ThemeContext)
+  const [{ isDark }] = useContext(ThemeContext)
 
   return (
     <>
-      <Link smooth to='#home'>
-        <IoArrowUp
-          className={isDark ? 'back-to-top-light' : 'back-to-top-dark'}
-        />
+      <Link className={isDark ? 'text-light' : 'text-dark'} smooth to='#home'>
+        <IoArrowUp className='back-to-top' />
       </Link>
     </>
   )
