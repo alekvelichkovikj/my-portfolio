@@ -33,7 +33,7 @@ export const Projects = () => {
           </div>
 
           <div className='card'>
-            <p>Bloggify | Blogging Platform (desktop)</p>
+            <p>Blogify | Bloging Platform (desktop)</p>
             <a href='https://bllogify.herokuapp.com/' target='blank'>
               <img src={blogifyImage} alt='Blogify Screenshot' />
             </a>
