@@ -8,7 +8,7 @@ export const ScrollToTop = () => {
 
   const scrollWithOffsetHome = (elHome) => {
     const yCoordinate = elHome.getBoundingClientRect().top + window.pageYOffset
-    const yOffset = -100
+    const yOffset = -130
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
   }
 
