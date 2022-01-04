@@ -20,9 +20,17 @@ p {
   line-height: 1.2;
 }
 
+li {
+  line-height: 1.3;
+}
+
 .text-yellow {
   color: #ffc000;
   font-weight: 700;
+}
+
+.yellow-underline {
+  border-bottom: 2px solid #ffc000;
 }
 
 .text-dark {
@@ -93,7 +101,7 @@ p {
 
 #home h3 {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #home p {
@@ -123,14 +131,15 @@ p {
 }
 
 .ml-1 {
+  color: #fcf5eb;
   display: inline-block;
-  margin-left: 10px;
+  text-align: center;
 }
 
 /* Bio */
 #bio h3 {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #bio p {
@@ -191,6 +200,10 @@ p {
 }
 
 /* Projects */
+#projects h3 {
+  display: inline-block;
+}
+
 #projects img {
   width: 300px;
   margin-bottom: 10px;
@@ -213,11 +226,11 @@ p {
 }
 
 #contact ul {
-  list-style-position: inside;
   margin-bottom: 80px;
 }
 
 #contact ul li {
+  list-style-position: inside !important;
   font-size: 16px;
 }
 

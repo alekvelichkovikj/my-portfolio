@@ -19,14 +19,17 @@ export const Home = () => {
           <p>
             Please have a look around & feel free to contact me or visit my
             LinkedIn & Github. You can find the source code for this project
-            <span className='btn-yellow ml-1'>
-              <a
-                className='text-dark'
-                href='https://github.com/alekvelichkovikj/my-portfolio'
-              >
-                <strong>here!</strong>
-              </a>
-            </span>
+            <a
+              className={
+                isDark
+                  ? 'text-light yellow-underline'
+                  : 'text-dark yellow-underline'
+              }
+              href='https://github.com/alekvelichkovikj/my-portfolio'
+            >
+              {' '}
+              here!
+            </a>
           </p>
 
           <div className='social-icons'>

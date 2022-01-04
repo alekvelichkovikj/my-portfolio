@@ -8,8 +8,11 @@ export const Contact = () => {
   return (
     <div id='contact'>
       <div className='container'>
-        <h3 className='btn-yellow'>Get in touch!</h3>
-        <p>How can i add to your team</p>
+        <div>
+          <h3 className='btn-yellow'>Get in touch!</h3>
+          <p>How I can add to your team</p>
+        </div>
+
         <ul>
           <li>Teamwork</li>
           <li>Communication</li>

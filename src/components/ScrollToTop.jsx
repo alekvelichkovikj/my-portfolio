@@ -16,6 +16,7 @@ export const ScrollToTop = () => {
     <>
       <Link
         className={isDark ? 'text-light' : 'text-dark'}
+        smooth
         to='#home'
         scroll={(home) => scrollWithOffsetHome(home)}
       >

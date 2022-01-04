@@ -45,6 +45,7 @@ export const Navbar = () => {
             <MenuLink onClick={() => setIsOpen(false)}>
               <Link
                 className='btn-dark'
+                smooth
                 to={'#bio'}
                 scroll={(el) => scrollWithOffset(el)}
               >
@@ -53,13 +54,17 @@ export const Navbar = () => {
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link to='#education' scroll={(el) => scrollWithOffset(el)}>
+              <Link
+                smooth
+                to='#education'
+                scroll={(el) => scrollWithOffset(el)}
+              >
                 Education
               </Link>
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link to='#projects' scroll={(el) => scrollWithOffset(el)}>
+              <Link smooth to='#projects' scroll={(el) => scrollWithOffset(el)}>
                 Projects
               </Link>
             </MenuLink>
@@ -67,6 +72,7 @@ export const Navbar = () => {
             <MenuLink onClick={() => setIsOpen(false)}>
               <Link
                 className='btn-dark'
+                smooth
                 to='#contact'
                 scroll={(el) => scrollWithOffset(el)}
               >

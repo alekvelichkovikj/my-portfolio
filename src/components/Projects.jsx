@@ -7,7 +7,9 @@ export const Projects = () => {
   return (
     <div id='projects'>
       <div className='container'>
-        <h3 className='btn-yellow'>Few of my projects</h3>
+        <div className='text-align-left'>
+          <h3 className='btn-yellow'>Few of my projects</h3>
+        </div>
 
         <div>
           <div className='card'>
