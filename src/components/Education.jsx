@@ -9,24 +9,8 @@ export const Education = () => {
 
         <div>
           <div className='card'>
-            <h3>Udemy</h3>
-            <ul>
-              <li>Modern HTML & CSS</li>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
-              <li>React.js</li>
-            </ul>
-          </div>
-          <div className='card'>
-            <h3>YouTube</h3>
-            <ol>
-              <li>
-                YouTube has an abundance of free material, I stil use it today!
-              </li>
-            </ol>
-          </div>
-          <div className='card'>
-            <h3>Ironhack Berlin</h3>
+            <h3 className='mb-0'>Ironhack Berlin</h3>
+            <p className='text-yellow'>Oct-Dec | 2021</p>
             <ul>
               <li>Front-End projects using HTML/CSS</li>
               <li>
@@ -35,6 +19,26 @@ export const Education = () => {
               </li>
               <li>Web application using React.js</li>
             </ul>
+          </div>
+
+          <div className='card'>
+            <h3 className='mb-0'>Udemy</h3>
+            <p className='text-yellow'>2020 - 2021</p>
+            <ul>
+              <li>Modern HTML & CSS</li>
+              <li>Bootstrap</li>
+              <li>Javascript</li>
+              <li>React.js</li>
+            </ul>
+          </div>
+
+          <div className='card'>
+            <h3>YouTube</h3>
+            <ol>
+              <li>
+                YouTube has an abundance of free material, I stil use it today!
+              </li>
+            </ol>
           </div>
         </div>
       </div>

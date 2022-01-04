@@ -133,11 +133,11 @@ li {
   padding: 0 10px;
 }
 
-.ml-1 {
+/* .ml-1 {
   color: #fcf5eb;
   display: inline-block;
   text-align: center;
-}
+} */
 
 /* Bio */
 #bio h3 {
@@ -173,11 +173,19 @@ li {
   margin-bottom: 30px;
 }
 
+.card h3:first-child {
+  margin-bottom: 0;
+}
+
 .card {
   text-align: center;
-  margin: 30px 0;
+  margin-bottom: 30px;
   border-bottom: 2px solid #ffc000;
   padding-bottom: 30px;
+}
+
+.card:first-child {
+  margin-top: 30px;
 }
 
 .card:last-child {
@@ -187,8 +195,13 @@ li {
 }
 
 .card p {
-  display: inline-block;
-  margin-bottom: 20px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.mb-0 {
+  margin-bottom: 5px !important;
 }
 
 .card ul,
@@ -209,7 +222,11 @@ li {
 
 #projects img {
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#projects p {
+  margin-bottom: 20px;
 }
 
 #projects p,

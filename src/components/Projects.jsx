@@ -19,13 +19,17 @@ export const Projects = () => {
               <img src={snakeImage} alt='Snake Game Screenshot' />
             </a>
             <p>Snake is built with JavaScript, purely dom manipulation</p>
-            <a
-              className='text-yellow'
-              href='https://github.com/alekvelichkovikj/snake-game'
-              target='blank'
-            >
+            <h5>
               Source code
-            </a>
+              <a
+                className='text-yellow'
+                href='https://github.com/alekvelichkovikj/snake-game'
+                target='blank'
+              >
+                {' '}
+                here!
+              </a>
+            </h5>
           </div>
 
           <div className='card'>
@@ -37,13 +41,17 @@ export const Projects = () => {
               Blogify is built with Javascript, Node.js, Express, MongoDB &
               Handlebars
             </p>
-            <a
-              className='text-yellow'
-              href='https://github.com/alekvelichkovikj/Blogify'
-              target='blank'
-            >
+            <h5>
               Source code
-            </a>
+              <a
+                className='text-yellow'
+                href='https://github.com/alekvelichkovikj/Blogify'
+                target='blank'
+              >
+                {' '}
+                here!
+              </a>
+            </h5>
           </div>
 
           <div className='card'>
@@ -52,13 +60,17 @@ export const Projects = () => {
               <img src={myConcertsImage} alt='My Concerts Screenshot' />
             </a>
             <p>My Concerts is built with Node.js, Express, MongoDB & React</p>
-            <a
-              className='text-yellow'
-              href='https://github.com/alekvelichkovikj/MyConcerts'
-              target='blank'
-            >
+            <h5>
               Source code
-            </a>
+              <a
+                className='text-yellow'
+                href='https://github.com/alekvelichkovikj/MyConcerts'
+                target='blank'
+              >
+                {' '}
+                here!
+              </a>
+            </h5>
           </div>
         </div>
       </div>
