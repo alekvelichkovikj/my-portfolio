@@ -7,9 +7,7 @@ export const Projects = () => {
   return (
     <div id='projects'>
       <div className='container'>
-        <div className='text-align-left'>
-          <h3 className='btn-yellow'>Few of my projects</h3>
-        </div>
+        <h3 className='btn-yellow'>Few of my projects</h3>
 
         <div>
           <div className='card'>
@@ -22,7 +20,7 @@ export const Projects = () => {
             </a>
             <p>Snake is built with JavaScript, purely dom manipulation</p>
             <a
-              className='btn-yellow'
+              className='text-yellow'
               href='https://github.com/alekvelichkovikj/snake-game'
               target='blank'
             >
@@ -40,7 +38,7 @@ export const Projects = () => {
               Handlebars
             </p>
             <a
-              className='btn-yellow'
+              className='text-yellow'
               href='https://github.com/alekvelichkovikj/Blogify'
               target='blank'
             >
@@ -55,7 +53,7 @@ export const Projects = () => {
             </a>
             <p>My Concerts is built with Node.js, Express, MongoDB & React</p>
             <a
-              className='btn-yellow'
+              className='text-yellow'
               href='https://github.com/alekvelichkovikj/MyConcerts'
               target='blank'
             >

@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset
-    const yOffset = -420
+    const yOffset = -400
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
   }
 
@@ -54,18 +54,18 @@ export const Navbar = () => {
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
+              <Link smooth to='#projects' scroll={(el) => scrollWithOffset(el)}>
+                Projects
+              </Link>
+            </MenuLink>
+
+            <MenuLink onClick={() => setIsOpen(false)}>
               <Link
                 smooth
                 to='#education'
                 scroll={(el) => scrollWithOffset(el)}
               >
                 Education
-              </Link>
-            </MenuLink>
-
-            <MenuLink onClick={() => setIsOpen(false)}>
-              <Link smooth to='#projects' scroll={(el) => scrollWithOffset(el)}>
-                Projects
               </Link>
             </MenuLink>
 

@@ -30,7 +30,9 @@ li {
 }
 
 .yellow-underline {
+  display: inline-block;
   border-bottom: 2px solid #ffc000;
+  padding: 2px 0;
 }
 
 .text-dark {
@@ -97,6 +99,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  text-align: start !important;
 }
 
 #home h3 {
@@ -220,7 +223,6 @@ li {
 }
 
 #contact p {
-  border-bottom: 2px solid #ffc000;
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -230,7 +232,7 @@ li {
 }
 
 #contact ul li {
-  list-style-position: inside !important;
+  list-style-position: inside;
   font-size: 16px;
 }
 

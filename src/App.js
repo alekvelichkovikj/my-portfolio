@@ -22,8 +22,8 @@ export const App = () => {
       <Navbar />
       <Home />
       <Bio />
-      <Education />
       <Projects />
+      <Education />
       <Contact />
       <ScrollToTop />
     </div>

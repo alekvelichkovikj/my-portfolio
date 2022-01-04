@@ -4,10 +4,8 @@ export const Education = () => {
   return (
     <div id='education'>
       <div className='container'>
-        <div>
-          <h3 className='btn-yellow'>Where i learned...</h3>
-          <p>The internet is a very big place with tons of information.</p>
-        </div>
+        <h3 className='btn-yellow'>Where i learned...</h3>
+        <p>The internet is a very big place with tons of information.</p>
 
         <div>
           <div className='card'>

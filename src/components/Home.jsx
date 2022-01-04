@@ -8,10 +8,8 @@ export const Home = () => {
   return (
     <div id='home'>
       <div className='container'>
-        <div>
-          <h3 className='btn-yellow'>Hi, Im Alek</h3>
-          <p>I'm a Web Developer and this is my online portfolio</p>
-        </div>
+        <h3 className='btn-yellow'>Hi, I'm Alek</h3>
+        <p>I'm a Web Developer and this is my online portfolio</p>
 
         <div className='img'></div>
 
@@ -20,11 +18,7 @@ export const Home = () => {
             Please have a look around & feel free to contact me or visit my
             LinkedIn & Github. You can find the source code for this project
             <a
-              className={
-                isDark
-                  ? 'text-light yellow-underline'
-                  : 'text-dark yellow-underline'
-              }
+              className='text-yellow'
               href='https://github.com/alekvelichkovikj/my-portfolio'
             >
               {' '}
