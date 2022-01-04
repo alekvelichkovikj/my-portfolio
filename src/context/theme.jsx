@@ -7,7 +7,7 @@ const themes = {
   },
   light: {
     backgroundColor: '#fcf5eb',
-    color: '#3f3f3f',
+    color: '#2f2f2f',
   },
 }
 

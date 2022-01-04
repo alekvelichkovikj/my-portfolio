@@ -7,17 +7,19 @@ export const Home = () => {
 
   return (
     <div id='home'>
-      <div className='container-mobile'>
+      <div className='container'>
         <div>
-          <h3 className='yellow'>Hi, Im Alek</h3>
+          <h3 className='btn-yellow'>Hi, Im Alek</h3>
           <p>I'm a Web Developer and this is my online portfolio</p>
         </div>
 
+        <div className='img'></div>
+
         <div>
           <p>
-            Please have a look around and feel free to contact me. You can find
-            the source code for this project
-            <span className='yellow mt-2'>
+            Please have a look around & feel free to contact me or visit my
+            LinkedIn & Github. You can find the source code for this project
+            <span className='btn-yellow ml-1'>
               <a
                 className='text-dark'
                 href='https://github.com/alekvelichkovikj/my-portfolio'

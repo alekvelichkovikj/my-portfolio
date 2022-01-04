@@ -1,9 +1,12 @@
 import { Navbar } from './components/Navbar'
-import styled from 'styled-components'
 import { useContext } from 'react'
 import { ThemeContext } from './context/theme'
 import { ScrollToTop } from './components/ScrollToTop'
 import { Home } from './components/Home'
+import { Bio } from './components/Bio'
+import { Education } from './components/Education'
+import { Projects } from './components/Projects'
+import { Contact } from './components/Contact'
 
 export const App = () => {
   const [{ theme }] = useContext(ThemeContext)
@@ -13,17 +16,16 @@ export const App = () => {
       style={{
         backgroundColor: theme.backgroundColor,
         color: theme.color,
+        paddingBottom: '150px',
       }}
     >
-      <Container>
-        <Navbar />
-        <Home />
-        <ScrollToTop />
-      </Container>
+      <Navbar />
+      <Home />
+      <Bio />
+      <Education />
+      <Projects />
+      <Contact />
+      <ScrollToTop />
     </div>
   )
 }
-
-const Container = styled.div`
-  height: 5000px;
-`

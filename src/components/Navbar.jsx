@@ -9,12 +9,24 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [{ isDark }, toggleTheme] = useContext(ThemeContext)
 
+  const scrollWithOffsetHome = (elHome) => {
+    const yCoordinate = elHome.getBoundingClientRect().top + window.pageYOffset
+    const yOffset = -130
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+  }
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset
+    const yOffset = -420
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+  }
+
   return (
     <Nav>
       <div className='nav'>
         <Container>
           <Logo onClick={() => setIsOpen(false)}>
-            <Link smooth to='#home'>
+            <Link to='#home' scroll={(home) => scrollWithOffsetHome(home)}>
               <IoPlanetOutline className='icon' />
             </Link>
           </Logo>
@@ -31,25 +43,33 @@ export const Navbar = () => {
 
           <Menu className='menu' isOpen={isOpen}>
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link className='yellow' smooth to={'#bio'}>
+              <Link
+                className='btn-dark'
+                to={'#bio'}
+                scroll={(el) => scrollWithOffset(el)}
+              >
                 Bio
               </Link>
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link smooth to='#education'>
+              <Link to='#education' scroll={(el) => scrollWithOffset(el)}>
                 Education
               </Link>
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link smooth to='#projects'>
+              <Link to='#projects' scroll={(el) => scrollWithOffset(el)}>
                 Projects
               </Link>
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link className='yellow' smooth to='#contact'>
+              <Link
+                className='btn-dark'
+                to='#contact'
+                scroll={(el) => scrollWithOffset(el)}
+              >
                 Contact
               </Link>
             </MenuLink>
@@ -73,7 +93,7 @@ const Nav = styled.div`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fcf5eb;
+  background-color: #ffc000;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 `
 
@@ -123,11 +143,11 @@ const Menu = styled.div`
 const MenuLink = styled.span`
   padding: 20px 30px;
   text-align: center;
-  color: #3f3f3f;
+  color: #2f2f2f;
 `
 
 const Logo = styled.span`
   padding: 20px 0;
   font-size: 28px;
-  color: #3f3f3f;
+  color: #2f2f2f;
 `

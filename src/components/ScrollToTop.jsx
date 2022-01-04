@@ -6,9 +6,19 @@ import { IoArrowUp } from 'react-icons/io5'
 export const ScrollToTop = () => {
   const [{ isDark }] = useContext(ThemeContext)
 
+  const scrollWithOffsetHome = (elHome) => {
+    const yCoordinate = elHome.getBoundingClientRect().top + window.pageYOffset
+    const yOffset = -100
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+  }
+
   return (
     <>
-      <Link className={isDark ? 'text-light' : 'text-dark'} smooth to='#home'>
+      <Link
+        className={isDark ? 'text-light' : 'text-dark'}
+        to='#home'
+        scroll={(home) => scrollWithOffsetHome(home)}
+      >
         <IoArrowUp className='back-to-top' />
       </Link>
     </>
