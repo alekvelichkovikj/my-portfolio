@@ -20,7 +20,10 @@ export const ScrollToTop = () => {
         to='#home'
         scroll={(home) => scrollWithOffsetHome(home)}
       >
-        <IoArrowUp className='back-to-top' />
+        <IoArrowUp
+          size={window.innerWidth < 374 && 35}
+          className='back-to-top'
+        />
       </Link>
     </>
   )

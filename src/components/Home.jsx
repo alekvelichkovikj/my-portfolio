@@ -9,7 +9,7 @@ export const Home = () => {
     <div id='home'>
       <div className='container'>
         <h3 className='btn-yellow'>Hi, I'm Alek</h3>
-        <p>I'm a Web Developer and this is my online portfolio</p>
+        <p>I'm a Web Developer & this is my online portfolio</p>
 
         <div className='img'></div>
 

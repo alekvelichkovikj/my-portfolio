@@ -6,19 +6,24 @@ import myConcertsImage from '../images/my-concerts.png'
 export const Projects = () => {
   return (
     <div id='projects'>
-      <div className='container'>
+      <div className='container '>
         <h3 className='btn-yellow'>Few of my projects</h3>
 
-        <div>
+        <div className='container-responsive'>
           <div className='card'>
-            <p>Snake Raw Game (desktop)</p>
+            <p>
+              Snake Raw Game <br />
+              (desktop)
+              <br />
+              <span className='preview-text'>Click on image for preview</span>
+            </p>
             <a
               href='https://alekvelichkovikj.github.io/snake-game/'
               target='blank'
             >
               <img src={snakeImage} alt='Snake Game Screenshot' />
             </a>
-            <p>Snake is built with JavaScript, purely dom manipulation</p>
+            <p>Snake is built with JavaScript, entirely dom manipulation</p>
             <h5>
               Source code
               <a
@@ -33,7 +38,11 @@ export const Projects = () => {
           </div>
 
           <div className='card'>
-            <p>Blogify | Bloging Platform (desktop)</p>
+            <p>
+              Blogify | Bloging Platform (desktop)
+              <br />
+              <span className='preview-text'>Click on image for preview</span>
+            </p>
             <a href='https://bllogify.herokuapp.com/' target='blank'>
               <img src={blogifyImage} alt='Blogify Screenshot' />
             </a>
@@ -55,7 +64,11 @@ export const Projects = () => {
           </div>
 
           <div className='card'>
-            <p>My Concerts | Find your next concert (responsive)</p>
+            <p>
+              My Concerts | Find your next concert (responsive)
+              <br />
+              <span className='preview-text'>Click on image for preview</span>
+            </p>
             <a href='http://my-li.herokuapp.com/' target='blank'>
               <img src={myConcertsImage} alt='My Concerts Screenshot' />
             </a>

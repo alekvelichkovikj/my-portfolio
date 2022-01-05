@@ -3,20 +3,22 @@ import React from 'react'
 export const Bio = () => {
   return (
     <div id='bio'>
-      <div className='container'>
-        <h3 className='btn-yellow'>About me...</h3>
-        <p>
-          Hi everyone! In the summer of 2020, through a friend's(senior dev)
-          suggestion I started my first class on Udemy for Modern HTML & CSS.
-          You could say after a very short time that I was pretty much hooked.
-          So I planned & plotted my future while continuing learning for the
-          next 18 months! I decided to attend a Bootcamp & it was one of the
-          best decisions I've ever made. My final project was voted one of two
-          best in my cohort! I'm very excited about what comes next.
-        </p>
+      <div className='container container-responsive'>
+        <div className='center'>
+          <h3 className='btn-yellow'>About me...</h3>
+          <p>
+            Hi everyone! In the summer of 2020, through a friends (senior dev)
+            suggestion I started my first class on Udemy for Modern HTML & CSS.
+            You could say after a very short time that I was pretty much hooked.
+            So I planned & plotted my future while continuing learning for the
+            next 18 months. I decided to attend a Bootcamp & it was one of the
+            best decisions I've ever made. My final project was voted one of two
+            best in my cohort. I'm very excited about what comes next.
+          </p>
+        </div>
 
-        <div>
-          <h5>My technical skills</h5>
+        <div className='center'>
+          <h3 className='btn-yellow'>Technical skills</h3>
           <div className='flex'>
             <ul>
               <li>JavaScript</li>

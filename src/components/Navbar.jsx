@@ -21,6 +21,12 @@ export const Navbar = () => {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
   }
 
+  const scrollWithOffsetResponsive = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset
+    const yOffset = -100
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+  }
+
   return (
     <Nav>
       <div className='nav'>
@@ -47,14 +53,26 @@ export const Navbar = () => {
                 className='btn-dark'
                 smooth
                 to={'#bio'}
-                scroll={(el) => scrollWithOffset(el)}
+                scroll={
+                  window.innerWidth < 1000
+                    ? (el) => scrollWithOffset(el)
+                    : (el) => scrollWithOffsetResponsive(el)
+                }
               >
                 Bio
               </Link>
             </MenuLink>
 
             <MenuLink onClick={() => setIsOpen(false)}>
-              <Link smooth to='#projects' scroll={(el) => scrollWithOffset(el)}>
+              <Link
+                smooth
+                to='#projects'
+                scroll={
+                  window.innerWidth < 1000
+                    ? (el) => scrollWithOffset(el)
+                    : (el) => scrollWithOffsetResponsive(el)
+                }
+              >
                 Projects
               </Link>
             </MenuLink>
@@ -63,25 +81,38 @@ export const Navbar = () => {
               <Link
                 smooth
                 to='#education'
-                scroll={(el) => scrollWithOffset(el)}
+                scroll={
+                  window.innerWidth < 1000
+                    ? (el) => scrollWithOffset(el)
+                    : (el) => scrollWithOffsetResponsive(el)
+                }
               >
                 Education
               </Link>
             </MenuLink>
 
-            <MenuLink onClick={() => setIsOpen(false)}>
-              <Link
-                className='btn-dark'
-                smooth
-                to='#contact'
-                scroll={(el) => scrollWithOffset(el)}
-              >
-                Contact
-              </Link>
-            </MenuLink>
+            {window.innerWidth > 1000 ? (
+              ''
+            ) : (
+              <MenuLink onClick={() => setIsOpen(false)}>
+                <Link
+                  className='btn-dark'
+                  smooth
+                  to='#contact'
+                  scroll={
+                    window.innerWidth < 1000
+                      ? (el) => scrollWithOffset(el)
+                      : (el) => scrollWithOffsetResponsive(el)
+                  }
+                >
+                  Contact
+                </Link>
+              </MenuLink>
+            )}
 
             <MenuLink onClick={() => setIsOpen(false)}>
               <a
+                className={window.innerWidth > 1000 ? 'btn-dark' : ''}
                 target='blank'
                 href='https://drive.google.com/file/d/1Nab9RqJq3T0GpilClfVEibc-boJP7ZBQ/view?usp=sharing'
               >
@@ -104,7 +135,7 @@ const Nav = styled.div`
 `
 
 const Container = styled.div`
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   padding: 0 30px;
   display: flex;
