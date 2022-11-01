@@ -13,7 +13,7 @@ export const Bio = () => {
             So I planned & plotted my future while continuing learning for the
             next 18 months. I decided to attend a Bootcamp & it was one of the
             best decisions I've ever made. My final project was voted one of two
-            best in my cohort. I'm very excited about what comes next.
+            best in my cohort. At the moment I'm working in a Frankfurt based fintech startup.
           </p>
         </div>
 
