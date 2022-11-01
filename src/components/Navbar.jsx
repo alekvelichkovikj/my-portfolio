@@ -114,7 +114,7 @@ export const Navbar = () => {
               <a
                 className={window.innerWidth > 1000 ? 'btn-dark' : ''}
                 target='blank'
-                href='https://drive.google.com/file/d/1Nab9RqJq3T0GpilClfVEibc-boJP7ZBQ/view?usp=sharing'
+                href='https://drive.google.com/file/d/19KzkB5-PjmPPdBw0dWInfZiM5x6kuFlV/view?usp=sharing'
               >
                 Resume
               </a>
